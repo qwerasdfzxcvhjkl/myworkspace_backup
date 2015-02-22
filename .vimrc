@@ -82,7 +82,7 @@ set bs=2				"
 set mouse=nv			" 設定滑鼠在all mode (a) 都可使用
 " -----------------------------Tab Setting------------------------------------------
 
-set expandtab
+set expandtab			" Replace <TAB> to be space
 set tabstop=4			" 設定<Tab>鍵的定位位址
 set softtabstop=4		"
 set shiftwidth=4		"
