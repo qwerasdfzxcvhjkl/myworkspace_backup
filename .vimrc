@@ -82,7 +82,7 @@ set bs=2				"
 set mouse=nv			" 設定滑鼠在all mode (a) 都可使用
 " -----------------------------Tab Setting------------------------------------------
 
-set expandtab			" Replace <TAB> to be space
+set expandtab
 set tabstop=4			" 設定<Tab>鍵的定位位址
 set softtabstop=4		"
 set shiftwidth=4		"
@@ -104,7 +104,8 @@ set hlsearch			" 搜尋字高亮度
 set cursorline			" 當前游標底線
 set foldmethod=indent	" 設定摺疊模式
 set foldnestmax=5		" 最高摺疊幾層
-set foldlevel=5			"
+set foldlevel=5			" 
+set t_Co=256
 "設置OmniCppComplete(暫時)
 set nocp
 
@@ -128,19 +129,19 @@ let g:NERDTreeDirArrows=1
 set pastetoggle=<F10>	            	    " 切換是否為剪貼模式
 map <C-L> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR>
 map <F9>  :GitGutterToggle<CR>
-" =============================Trinity=============================================
-" Open and close all the three plugins on the same time
-nmap <F8>  :TrinityToggleAll<CR>
+" -----------------------------Trinity---------------------------------------------
+" Open and close all the three plugins on the same time 
+nmap <F8>  :TrinityToggleAll<CR> 
 
-" Open and close the Source Explorer separately
-nmap <F5>  :TrinityToggleSourceExplorer<CR>
+" Open and close the Source Explorer separately 
+nmap <F5>  :TrinityToggleSourceExplorer<CR> 
 
-" Open and close the Taglist separately
-nmap <F6> :TrinityToggleTagList<CR>
+" Open and close the Taglist separately 
+nmap <F6> :TrinityToggleTagList<CR> 
 
-" Open and close the NERD Tree separately
+" Open and close the NERD Tree separately 
 nmap <F7> :TrinityToggleNERDTree<CR>
-
+map <S-TAB> :set expandtab!<CR>
 
 "map <C-u> :set fileencoding=utf8
 "map <C-b> :set fileencoding=big5
